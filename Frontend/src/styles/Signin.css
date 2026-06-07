@@ -1,0 +1,80 @@
+.signin-background {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+
+  /* 📚 Attractive library background image */
+  background-image: url("https://images.unsplash.com/photo-1524995997946-a1c2e315a42f");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Dark overlay */
+.signin-background::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+}
+
+/* Form box */
+.signin-container {
+  position: relative;
+  z-index: 2;
+
+  background: rgba(255, 255, 255, 0.92);
+  padding: 35px;
+  border-radius: 12px;
+  width: 350px;
+  text-align: center;
+
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+.signin-container h1 {
+  color: #0f4c81;
+  margin-bottom: 20px;
+}
+
+.signin-container label {
+  display: block;
+  text-align: left;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.signin-container input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.signin-container button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  background: #0f4c81;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.signin-container button:hover {
+  background: #08345a;
+}
+
+.signin-container p {
+  margin-top: 15px;
+}
